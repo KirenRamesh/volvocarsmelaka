@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <title>Bosco - Volvo Specialist</title>
+  <link href="https://fonts.cdnfonts.com/css/volvo-novum" rel="stylesheet">
+  <style>
+    :root {
+      --volvo-blue: #1B365D;
+      --volvo-light-blue: #7089AC;
+      --volvo-gray: #CED9E5;
+      --volvo-dark: #000000;
+      --volvo-text: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+  font-family: 'Volvo Novum', sans-serif;
+  background-color: var(--volvo-dark);
+  background-image: url('bg.jpg'); /* or 'images/bg.jpg' */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: var(--volvo-text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      width: 100%;
+      max-width: 600px;
+      padding: 20px;
+      backdrop-filter: blur(30px);
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      margin: 20px;
+    }
+
+    .logo {
+      width: 40%;
+      max-width: 200px;
+      margin: 20px auto;
+      display: block;
+    }
+
+    h1 {
+      font-weight: 300;
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: var(--volvo-gray);
+    }
+
+    h2.subheading {
+      font-weight: 200;
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: var(--volvo-gray);
+    }
+
+    .profile-pic {
+      width: 380px;
+      border-radius: 0%;
+      margin-bottom: 0px;
+      border: transparent;
+    }
+
+    .button {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 15px;
+      font-size: 16px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 10px;
+      color: var(--volvo-text);
+      backdrop-filter: blur(10px);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: var(--volvo-light-blue);
+      color: #fff;
+    }
+
+    .map {
+      margin-top: 40px;
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+      filter: invert(90%) hue-rotate(180deg);
+    }
+
+    #about-page {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+      text-align: center;
+      backdrop-filter: blur(30px);
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      margin: 20px;
+    }
+
+    #about-page img {
+      width: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 0px solid var(--volvo-gray);
+    }
+
+    #about-page p {
+      color: var(--volvo-gray);
+    }
+
+    @media (max-width: 768px) {
+      .logo {
+        width: 30%;
+      }
+
+      .button {
+        font-size: 14px;
+        padding: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="landing-page" class="container">
+    <img class="logo" src="logo.png" alt="Volvo Logo" />
+    <h1>Bosco</h1>
+    <h2 class="subheading">Your Volvo Specialist</h2>
+    <img class="profile-pic" src="boscodp.png" alt="Bosco Photo" />
+    <button class="button" onclick="goToAbout()">About Me</button>
+    <button class="button" onclick="window.open('https://wa.me/60196554353', '_blank')">WhatsApp</button>
+    <button class="button" onclick="window.open('https://www.facebook.com/share/1AKukzyuzZ/', '_blank')">Facebook</button>
+    <button class="button" onclick="window.open('https://www.instagram.com/boscowongleongsoon?igsh=MXZzN29ucTJ4djF4bg==', '_blank')">Instagram</button>
+    <button class="button" onclick="window.open('https://www.tiktok.com/@boscowongleongsoo?_t=ZS-8wJkd6EUmp6&_r=1', '_blank')">TikTok</button>
+    <button class="button" onclick="window.open('https://www.xiaohongshu.com/user/profile/6823ebfa000000000a03f0a0?xsec_token=YBGfR2INqOX6G4-0yzZVqY67gfSEVfQkTYAZtN9kjtAwI%3D&xsec_source=app_share&xhsshare=CopyLink&appuid=6823ebfa000000000a03f0a0&apptime=1747198236&share_id=0e50caee0aa241e1a2a7979cce61fded&share_channel=copy_link', '_blank')">XHS</button>
+    <button class="button" onclick="window.open('https://seonghoe-melaka.selekt.volvocars.com.my/enmy/home', '_blank')">Volvo Selekt Used Cars</button>
+    <button class="button" onclick="window.location.href='index.html'">The Team</button>
+    <iframe class="map" src="https://www.google.com/maps?q=16,+Jalan+Tun+Sri+Lanang,+Pengkalan+Rama+Tengah,+75100+Melaka&output=embed" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+
+  <div id="about-page" class="container">
+    <h1>Kent</h1>
+    
+    <p>I am Kent, your dedicated Volvo Specialist. Passionate about cars and committed to providing excellent service and guidance to all Volvo enthusiasts.</p>
+    <button class="button" onclick="goToLanding()">Back to Home</button>
+  </div>
+
+  <script>
+    function goToAbout() {
+      document.getElementById('landing-page').style.display = 'none';
+      document.getElementById('about-page').style.display = 'flex';
+    }
+    function goToLanding() {
+      document.getElementById('about-page').style.display = 'none';
+      document.getElementById('landing-page').style.display = 'block';
+    }
+  </script>
+</body>
+</html>

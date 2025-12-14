@@ -416,7 +416,7 @@ footer {
 
 /* --- RESPONSIVE --- */
 @media (max-width: 768px) {
-    .nav-links { display: none; position: absolute; top: 80px; left: 0; width: 100%; background: var(--bg-panel); flex-direction: column; padding: 20px; text-align: center; }
+    .nav-links { display: none; position: absolute; top: 80px; left: 0; width: 100%; background: var(--bg-dark); flex-direction: column; padding: 20px; text-align: center; }
     .nav-links.active { display: flex; }
     .hamburger { display: block; }
     .hero h1 { font-size: 2.5rem; }
@@ -705,6 +705,7 @@ footer {
 }
 
 /* --- END HAMBURGER ANIMATION --- */
+
 
 
 

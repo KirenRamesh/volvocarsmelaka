@@ -10,12 +10,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // --- Mobile Menu ---
+    // --- Mobile Menu (UPDATED) ---
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
     if(hamburger) {
         hamburger.addEventListener('click', () => {
             navLinks.classList.toggle('active');
+            // This line enables the bars-to-'X' CSS animation:
+            hamburger.classList.toggle('is-open'); 
         });
     }
 

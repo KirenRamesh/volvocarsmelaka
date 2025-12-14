@@ -3,7 +3,7 @@
 
 :root {
     --bg-dark: #0b0f19;       /* Almost black */
-    --bg-panel: #1c1c1c;      /* Dark Navy */
+    --bg-panel: #123936;      /* Dark Navy */
     --gold: #C5A059;          /* Luxury Gold */
     --gold-dim: #8a703d;
     --text-light: #e2e8f0;
@@ -705,6 +705,7 @@ footer {
 }
 
 /* --- END HAMBURGER ANIMATION --- */
+
 
 
 

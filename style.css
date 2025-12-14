@@ -646,4 +646,45 @@ footer {
     .footer-contact {
         text-align: center !important;
     }
+
+}
+
+
+/* --- HAMBURGER MENU ANIMATION STYLES (NEW) --- */
+
+/* 1. Base style for the hamburger wrapper */
+.hamburger {
+    /* Ensures the hamburger remains clickable and in position */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px; /* Width of the icon */
+    height: 25px; /* Total height of the icon */
+    cursor: pointer;
+    z-index: 1000; /* Keep it above everything */
+}
+
+/* 2. Style for the individual bars */
+.hamburger .bar {
+    width: 100%;
+    height: 3px; /* Thickness of the bar */
+    background-color: var(--gold); /* Bar color */
+    border-radius: 2px;
+    transition: all 0.3s ease; /* Smooth animation for rotation/movement */
+}
+
+/* 3. Styles when the menu is ACTIVE (The "X" transformation) */
+.nav-links.active + .hamburger .top-bar {
+    /* Top bar rotates 45 degrees and moves down */
+    transform: rotate(45deg) translate(5px, 6px);
+}
+
+.nav-links.active + .hamburger .middle-bar {
+    /* Middle bar disappears */
+    opacity: 0;
+}
+
+.nav-links.active + .hamburger .bottom-bar {
+    /* Bottom bar rotates -45 degrees and moves up */
+    transform: rotate(-45deg) translate(5px, -6px);
 }

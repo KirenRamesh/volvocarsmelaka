@@ -313,7 +313,7 @@ nav.scrolled {
 .pillar-item {
     padding: 40px;
     background: var(--bg-dark);
-    border: 1px solid rgba(197, 160, 89, 0.1);
+    border: 4px solid rgba(197, 160, 89, 0.1);
     transition: var(--transition);
 }
 
@@ -705,6 +705,7 @@ footer {
 }
 
 /* --- END HAMBURGER ANIMATION --- */
+
 
 
 

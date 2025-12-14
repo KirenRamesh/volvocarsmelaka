@@ -120,7 +120,7 @@ nav.scrolled {
     /* -------------------------------------------------------------------------- */
     /* --- NEW CHANGE: Replace the image URL with your desired file path/URL --- */
     /* -------------------------------------------------------------------------- */
-    background-image: url('hero_main.jpg'); 
+    background-image: url('hero.jpg'); 
     
     background-size: cover;
     background-position: center;
@@ -705,5 +705,6 @@ footer {
 }
 
 /* --- END HAMBURGER ANIMATION --- */
+
 
 
